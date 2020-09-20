@@ -1,1 +1,1 @@
-https://github.com/makarchiknet/rsschool-cv/cv
+https://github.com/makarchiknet.github.io/rsschool-cv/cv
