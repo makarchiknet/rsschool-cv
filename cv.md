@@ -16,7 +16,14 @@
   * I also have experience in graphics packages such as Photoshop, CorelDraw and Illustrator.
 
 3. **Skills**
- 
+
+  * HTML
+  * CSS
+  * SCSS
+  * BEM
+  * JS Basic
+  * Git
+  * VS Code
 
 4. **Code examples**
 
