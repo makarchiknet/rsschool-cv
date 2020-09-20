@@ -36,8 +36,17 @@
 
 6. **Education**
 
+* _**Belarusian National Technical University**_
+    * 2008-2014
+    * Economics and organization of production
 
+  * _**IT-School MyFreedom**_
+    * 2018-2019
+    * Frontend-developer. JavaScript
 
+  * _**Online Udemy**_
+    * 2020
+    * Front-End Development and Consulting
 
 7. **English**
 
