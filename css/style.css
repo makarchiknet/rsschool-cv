@@ -1,0 +1,58 @@
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+   max-width: 1000px;
+   margin: 0 auto;
+
+   display: flex;
+}
+.wrap {
+   padding: 0 40px;
+}
+h1 {
+   color: cadetblue;
+   text-align: center;
+}
+h3 {
+   padding: 15px 0;
+}
+
+h4 {
+   padding: 10px 0;
+   text-decoration: underline;
+}
+.main-info {
+   width: 40%;
+   color: cadetblue;
+}
+.main-info .foto {
+   width: 100%;
+}
+.additional-info {
+   width: 60%;
+   color: white;
+}
+.divider {
+   height: 1px;
+   width: 100%;
+   margin: 20px auto;
+}
+.blue {
+   background-color: cadetblue;
+}
+.white {
+   background-color: white;
+}
+ul {
+   padding: 5px 0px 5px 30px;
+}
+li {
+   padding-bottom: 5px;
+}
