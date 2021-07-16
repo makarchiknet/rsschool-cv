@@ -12,9 +12,7 @@
   * I have good analytical skills. 
   * Easy to learn. 
   * I work well in a team.
-  * Experience in Javascript / HTML / CSS development.
-  * I also have experience in graphics packages such as Photoshop, CorelDraw and Illustrator.
-
+  
 3. **Skills**
 
   * HTML
