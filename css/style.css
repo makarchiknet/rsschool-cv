@@ -10,14 +10,28 @@ body {
 .container {
    max-width: 1000px;
    margin: 0 auto;
-
+}
+.header {
+   height: 80px;
+   padding-top: 20px;
+   background-color: cadetblue;
+   margin-bottom: 20px;
+}
+.main {
    display: flex;
 }
-.wrap {
+.wrap-info {
+   padding: 180px 40px;
+   margin: 20px 0;
+}
+.wrap-additional {
    padding: 0 40px;
 }
+.color-white {
+   color: white;
+}
 h1 {
-   color: cadetblue;
+   color: white;
    text-align: center;
 }
 h3 {
@@ -30,20 +44,21 @@ h4 {
 }
 .main-info {
    width: 40%;
-   color: cadetblue;
+   color: white;
 }
 .main-info .foto {
    width: 100%;
 }
 .additional-info {
    width: 60%;
-   color: white;
+   color: cadetblue;
 }
 .divider {
    height: 1px;
    width: 100%;
    margin: 20px auto;
 }
+
 .blue {
    background-color: cadetblue;
 }
@@ -53,6 +68,46 @@ h4 {
 ul {
    padding: 5px 0px 5px 30px;
 }
+
 li {
    padding-bottom: 5px;
+}
+
+.pick:hover {
+   color: rgb(13, 84, 87);
+}
+
+.pick a:hover {
+   color: rgb(13, 84, 87);
+}
+a {
+   cursor: pointer;
+   color: cadetblue;
+   text-decoration: none;
+   transition: all 0.3s ease;
+}
+
+.footer {
+   height: 80px;
+   background-color: cadetblue;
+   padding: 0 20px;
+   color: white;
+}
+.footer-nav {
+   display: flex;
+   justify-content: space-between;
+   padding-top: 20px;
+}
+.github {
+   font-size: 25px;
+}
+.rsschool {
+   font-size: 40px;
+}
+.footer p {
+   font-size: 14px;
+}
+
+.footer a {
+   color: white;
 }
