@@ -3,26 +3,101 @@
    padding: 0;
    margin: 0;
 }
+
+html {
+   scroll-behavior: smooth;
+}
 body {
    font-family: Arial, Helvetica, sans-serif;
+   box-sizing: border-box;
 }
-
+h1 {
+   color: cadetblue;
+   text-align: center;
+   padding: 15px;
+}
+h3 {
+   padding: 15px 0;
+}
+h4 {
+   padding: 10px 0;
+   text-decoration: underline;
+}
+li {
+   padding-bottom: 5px;
+}
+a {
+   cursor: pointer;
+   color: cadetblue;
+   text-decoration: none;
+}
 .container {
    max-width: 1000px;
    margin: 0 auto;
 }
+.wraper {
+   margin: 0 15px;
+   overflow: hidden;
+}
 .header {
-   height: 80px;
-   padding-top: 20px;
-   background-color: cadetblue;
+   min-height: 80px;
+   display: flex;
+   flex-direction: column;
+
    margin-bottom: 20px;
 }
+.header-menu {
+   padding: 15px 0;
+}
+.menu {
+   max-width: 100%;
+   background-color: cadetblue;
+}
+
+.menu-items {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.menu-item {
+   list-style-type: none;
+   padding: 5px 25px;
+}
+.menu-item a {
+   transition: all 0.7s ease;
+}
+.menu-item a:hover {
+   color: rgb(13, 84, 87);
+}
+
+.menu-item a {
+   color: white;
+   font-size: 16px;
+}
+.ul-items {
+   padding-left: 15px;
+}
+
 .main {
    display: flex;
 }
+.main-info {
+   display: flex;
+   flex-direction: column;
+   max-width: 40%;
+   color: white;
+}
+.main-info .foto {
+   flex: 0 0 auto;
+}
+.main-info .foto img {
+   width: 100%;
+   background-repeat: no-repeat;
+}
 .wrap-info {
-   padding: 180px 40px;
+   padding: 20px 40px;
    margin: 20px 0;
+   flex: 1 0 auto;
 }
 .wrap-additional {
    padding: 0 40px;
@@ -30,28 +105,10 @@ body {
 .color-white {
    color: white;
 }
-h1 {
-   color: white;
-   text-align: center;
-}
-h3 {
-   padding: 15px 0;
-}
-
-h4 {
-   padding: 10px 0;
-   text-decoration: underline;
-}
-.main-info {
-   width: 40%;
-   color: white;
-}
-.main-info .foto {
-   width: 100%;
-}
 .additional-info {
-   width: 60%;
+   max-width: 60%;
    color: cadetblue;
+   margin-bottom: 20px;
 }
 .divider {
    height: 1px;
@@ -65,14 +122,10 @@ h4 {
 .white {
    background-color: white;
 }
-ul {
-   padding: 5px 0px 5px 30px;
-}
 
-li {
-   padding-bottom: 5px;
+.pick {
+   transition: color 0.7s ease;
 }
-
 .pick:hover {
    color: rgb(13, 84, 87);
 }
@@ -80,13 +133,6 @@ li {
 .pick a:hover {
    color: rgb(13, 84, 87);
 }
-a {
-   cursor: pointer;
-   color: cadetblue;
-   text-decoration: none;
-   transition: all 0.3s ease;
-}
-
 .footer {
    height: 80px;
    background-color: cadetblue;
@@ -95,6 +141,7 @@ a {
 }
 .footer-nav {
    display: flex;
+   flex-wrap: wrap;
    justify-content: space-between;
    padding-top: 20px;
 }
@@ -103,11 +150,53 @@ a {
 }
 .rsschool {
    font-size: 40px;
+   padding-right: 15px;
 }
 .footer p {
    font-size: 14px;
 }
-
 .footer a {
    color: white;
+}
+
+@media (max-width: 700px) {
+   .wrap-info {
+      padding-left: 15px;
+   }
+}
+
+@media (max-width: 629px) {
+   .wraper {
+      margin: 0;
+   }
+   .main {
+      flex-wrap: wrap;
+   }
+   .main-info {
+      max-width: 100%;
+   }
+   .additional-info {
+      max-width: 100%;
+   }
+   .header {
+      margin-bottom: 0px;
+   }
+   .wrap-info {
+      margin: 0px;
+   }
+   .wrap-additional {
+      padding: 0 20px;
+   }
+}
+@media (max-width: 399px) {
+   .footer {
+      padding: 0 10px;
+   }
+   .rsschool {
+      font-size: 35px;
+      padding-right: 5px;
+   }
+   .github {
+      font-size: 20px;
+   }
 }
