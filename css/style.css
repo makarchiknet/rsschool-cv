@@ -3,6 +3,12 @@
    padding: 0;
    margin: 0;
 }
+body._lock {
+   overflow: hidden;
+}
+img {
+   vertical-align: top;
+}
 
 html {
    scroll-behavior: smooth;
@@ -11,11 +17,7 @@ body {
    font-family: Arial, Helvetica, sans-serif;
    box-sizing: border-box;
 }
-h1 {
-   color: cadetblue;
-   text-align: center;
-   padding: 15px;
-}
+
 h3 {
    padding: 15px 0;
 }
@@ -39,47 +41,165 @@ a {
    margin: 0 15px;
    overflow: hidden;
 }
-.header {
-   min-height: 80px;
-   display: flex;
-   flex-direction: column;
 
-   margin-bottom: 20px;
-}
-.header-menu {
-   padding: 15px 0;
-}
-.menu {
-   max-width: 100%;
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 10;
    background-color: cadetblue;
 }
 
-.menu-items {
+.header__container {
    display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 30px;
+   min-height: 70px;
 }
-.menu-item {
-   list-style-type: none;
-   padding: 5px 25px;
+
+.header__logo-link {
+   color: white;
+   display: none;
 }
-.menu-item a {
-   transition: all 0.7s ease;
+
+.menu__icon {
+   display: none;
 }
-.menu-item a:hover {
+
+.menu__list {
+   list-style: none;
+}
+.menu__list > li {
+   list-style: none;
+}
+.menu__list > li:not(:last-child) {
+   list-style: none;
+   margin: 0 20px 0 0;
+}
+.menu__link {
+   text-decoration: none;
+   cursor: pointer;
+   font-size: 18px;
+   color: white;
+   transition: color 0.7s ease;
+}
+.menu__link:hover {
    color: rgb(13, 84, 87);
 }
 
-.menu-item a {
-   color: white;
-   font-size: 16px;
+@media (min-width: 767px) {
+   .menu__list {
+      display: flex;
+      align-items: center;
+   }
+   .menu__list > li {
+      padding: 10px 0;
+   }
 }
-.ul-items {
-   padding-left: 15px;
+@media (max-width: 767px) {
+   .menu__icon {
+      display: block;
+      position: relative;
+      z-index: 5;
+      width: 30px;
+      height: 18px;
+      cursor: pointer;
+   }
+   .menu__icon span,
+   .menu__icon::after,
+   .menu__icon::before {
+      position: absolute;
+      width: 100%;
+      height: 10%;
+      left: 0;
+      transition: all 0.3s ease 0s;
+      background-color: white;
+   }
+   .menu__icon::after,
+   .menu__icon::before {
+      content: "";
+   }
+   .menu__icon::after {
+      bottom: 0;
+   }
+
+   .menu__icon::before {
+      top: 0;
+   }
+   .menu__icon span {
+      top: 50%;
+      transform: scale(1) translate(0, -50%);
+   }
+   .menu__icon._active span {
+      transform: scale(0) translate(0, -50%);
+   }
+   .menu__icon._active::before {
+      top: 50%;
+      transform: rotate(-45deg) translate(0, -50%);
+   }
+   .menu__icon._active::after {
+      bottom: 50%;
+      transform: rotate(45deg) translate(0, 50%);
+   }
+   .menu__body {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(95, 158, 160, 0.9);
+      padding: 100px 30px 30px 30px;
+      transition: all 0.3s ease 0s;
+      overflow: auto;
+   }
+   .menu__body._active {
+      left: 0;
+   }
+   .menu__body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 70px;
+      background-color: cadetblue;
+      z-index: 2;
+   }
+
+   .menu__list > li:not(:last-child) {
+      margin: 0 0 30px 0;
+   }
+   .menu__link {
+      font-size: 24px;
+   }
+   .header__logo-link {
+      position: fixed;
+      top: 25px;
+      left: 20px;
+      display: block;
+      color: white;
+      font-size: 20px;
+      z-index: 10;
+   }
+   .title {
+      visibility: hidden;
+      display: none;
+   }
+}
+.main {
+   margin-top: 90px;
+}
+.main-container {
+   display: flex;
 }
 
-.main {
-   display: flex;
+.title {
+   text-align: center;
+   color: cadetblue;
+   font-size: 34px;
+   padding-bottom: 20px;
 }
 .main-info {
    display: flex;
@@ -161,7 +281,7 @@ a {
 
 @media (max-width: 700px) {
    .wrap-info {
-      padding-left: 15px;
+      padding-left: 30px;
    }
 }
 
@@ -170,10 +290,16 @@ a {
       margin: 0;
    }
    .main {
+      margin-top: 70px;
+   }
+   .main-container {
       flex-wrap: wrap;
    }
    .main-info {
       max-width: 100%;
+   }
+   .title {
+      font-size: 25px;
    }
    .additional-info {
       max-width: 100%;
@@ -185,7 +311,7 @@ a {
       margin: 0px;
    }
    .wrap-additional {
-      padding: 0 20px;
+      padding: 0 30px;
    }
 }
 @media (max-width: 399px) {
