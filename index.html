@@ -18,126 +18,143 @@
       <div class="container">
 
          <header class="header">
-            <nav class="header-menu menu">
-               <ul class="menu-items">
-                  <li class="menu-item"><a href="#contacts">Contacts</a></li>
-                  <li class="menu-item"><a href="#skills">Skills</a></li>
-                  <li class="menu-item"><a href="#about">About</a></li>
-                  <li class="menu-item"><a href="#education">Education</a></li>
-                  <li class="menu-item"><a href="#code">Code</a></li>
-               </ul>
-            </nav>
-            <h1>Harasimovich Katsiaryna</h1>
-         </header>
-         <main class="main">
-            <aside class="main-info">
-               <figure class="foto">
-                  <img src="img/IMG_20200411_132507.jpg" alt="foto">
-               </figure>
-
-               <div class="wrap-info blue">
-                  <h3 class="left" id="contacts">Contacts</h3>
-                  <ul class="ul-items">
-                     <li><a href="tel:+375295273703" class="color-white">+375 (29) 527-37-03</a></li>
-                     <li><a href="mailto:makarchiknet@gmail.com" class="color-white">makarchiknet@gmail.com</a></li>
-                  </ul>
-                  <h3 class="left" id="skills">Skills</h3>
-                  <ul class="ul-items">
-                     <li>HTML</li>
-                     <li>CSS / SCSS / BEM</li>
-                     <li>JS Basic</li>
-                     <li>Figma / Photoshop</li>
-                     <li>Git</li>
-                     <li>VS Code</li>
-                  </ul>
-                  <h3 class="left">Language</h3>
-                  <ul class="ul-items">
-                     <li>English: Pre-Intermediate</li>
-                  </ul>
-               </div>
-            </aside>
-
-            <section class="additional-info white">
-
-               <div class="wrap-additional">
-
-                  <h3 class="right myself" id="about">About myself</h3>
-                  <p>I'd describe myself as a hardworking person with good organizational skills. Furthermore, I'm a
-                     sociable person, that's why I've always been able to get along with different types of people.</p>
-                  <p>In my free time I enjoy sewing/ It provides me with a good balance in my life.</p>
-
-                  <div class="divider blue"></div>
-
-                  <h3 class="right">Summary</h3>
-                  <ul class="ul-items">
-                     <li>Extremely motivated for career change goal.</li>
-                     <li>Start my career as a trainee Fron-end developer in IT company and after 3 years grow to a team
-                        lead.
-                     </li>
-                     <li>I have good analytical skills.
-                     </li>
-                     <li>Easy to learn. </li>
-                     <li>I work well in a team.
-                     </li>
-                  </ul>
-
-                  <div class="divider blue"></div>
-                  <h3 class="right" id="education">Education</h3>
-                  <h4>Belarusian National Technical University</h4>
-                  <ul class="ul-items">
-                     <li>2008-2014</li>
-                     <li>Economics and organization of production</li>
-                  </ul>
-
-                  <h4>IT-School MyFreedom</h4>
-                  <ul class="ul-items">
-                     <li>2018-2019</li>
-                     <li>Frontend-developer. JavaScript</li>
-                  </ul>
-
-                  <h4>Udemy</h4>
-                  <ul class="ul-items">
-                     <li>2020</li>
-                     <li>Frontend-developer. JavaScript</li>
-                  </ul>
-                  <div class="divider blue"></div>
-
-                  <h3 class="right" id="code">Code examples</h3>
-                  <nav class="code-examples">
-                     <ul class="ul-items">
-                        <li class="pick"><a href="https://makarchiknet.github.io/ToDo-List/" target="_blank">ToDo
-                              List</a>
-                        </li>
-                        <li class="pick"><a href="https://makarchiknet.github.io/Trello-clone/"
-                              target="_blank">Trello-clone</a></li>
-                        <li class="pick"><a href="https://makarchiknet.github.io/" target="_blank">Landing page</a></li>
-                        <li>
-                           Code:
-                        </li>
+            <div class="header__container container">
+               <div class="header__logo"><a class="header__logo-link" href="#">Herasimovich Katsiaryna</a></div>
+               <div class="header__menu menu">
+                  <div class="menu__icon">
+                     <span></span>
+                  </div>
+                  <nav class="menu__body">
+                     <ul class="menu__list">
+                        <li><a data-goto="#contacts" class="menu__link" href="#">Contacts</a></li>
+                        <li><a data-goto="#skills" class="menu__link" href="#">Skills</a></li>
+                        <li><a data-goto="#about" class="menu__link" href="#">About myself</a></li>
+                        <li><a data-goto="#education" class="menu__link" href="#">Education</a></li>
+                        <li><a data-goto="#code" class="menu__link" href="#">Code</a></li>
                      </ul>
                   </nav>
-                  <pre><code class="html">
-function convertHashToArray(hash)
- {const myHash = Object.entries(hash)
-   return myHash.sort()
-}
-                  </code></pre>
-
-
-                  <div class="divider blue"></div>
-
-                  <h3 class="right">Experience</h3>
-                  <ul class="ul-items">
-                     <li>Experience in Javascript / HTML / CSS development.
-                     </li>
-                     <li>I also have experience in graphics packages such as Photoshop, CorelDraw, Illustrator
-                        and
-                        Figma.
-                     </li>
-                     <li>Basics of working with version control systems</li>
-                  </ul>
                </div>
-            </section>
+
+            </div>
+         </header>
+
+         <main class="main">
+            <h1 class="title">Herasimovich Katsiaryna</h1>
+            <div class="main-container">
+               <aside class="main-info">
+                  <figure class="foto">
+                     <img src="img/IMG_20200411_132507.jpg" alt="foto">
+                  </figure>
+
+                  <div class="wrap-info blue">
+                     <h3 class="left" id="contacts">Contacts</h3>
+                     <ul class="ul-items">
+                        <li><a href="tel:+375295273703" class="color-white">+375 (29) 527-37-03</a></li>
+                        <li><a href="mailto:makarchiknet@gmail.com" class="color-white">makarchiknet@gmail.com</a></li>
+                     </ul>
+                     <h3 class="left" id="skills">Skills</h3>
+                     <ul class="ul-items">
+                        <li>HTML</li>
+                        <li>CSS / SCSS / BEM</li>
+                        <li>JS Basic</li>
+                        <li>Figma / Photoshop</li>
+                        <li>Git</li>
+                        <li>VS Code</li>
+                     </ul>
+                     <h3 class="left">Language</h3>
+                     <ul class="ul-items">
+                        <li>English: Pre-Intermediate</li>
+                     </ul>
+                  </div>
+               </aside>
+
+               <section class="additional-info white">
+
+                  <div class="wrap-additional">
+
+                     <h3 class="right myself" id="about">About myself</h3>
+                     <p>I'd describe myself as a hardworking person with good organizational skills. Furthermore, I'm a
+                        sociable person, that's why I've always been able to get along with different types of people.
+                     </p>
+                     <p>In my free time I enjoy sewing/ It provides me with a good balance in my life.</p>
+
+                     <div class="divider blue"></div>
+
+                     <h3 class="right">Summary</h3>
+                     <ul class="ul-items">
+                        <li>Extremely motivated for career change goal.</li>
+                        <li>Start my career as a trainee Fron-end developer in IT company and after 3 years grow to a
+                           team
+                           lead.
+                        </li>
+                        <li>I have good analytical skills.
+                        </li>
+                        <li>Easy to learn. </li>
+                        <li>I work well in a team.
+                        </li>
+                     </ul>
+
+                     <div class="divider blue"></div>
+                     <h3 class="right" id="education">Education</h3>
+                     <h4>Belarusian National Technical University</h4>
+                     <ul class="ul-items">
+                        <li>2008-2014</li>
+                        <li>Economics and organization of production</li>
+                     </ul>
+
+                     <h4>IT-School MyFreedom</h4>
+                     <ul class="ul-items">
+                        <li>2018-2019</li>
+                        <li>Frontend-developer. JavaScript</li>
+                     </ul>
+
+                     <h4>Udemy</h4>
+                     <ul class="ul-items">
+                        <li>2020</li>
+                        <li>Frontend-developer. JavaScript</li>
+                     </ul>
+                     <div class="divider blue"></div>
+
+                     <h3 class="right" id="code">Code examples</h3>
+                     <nav class="code-examples">
+                        <ul class="ul-items">
+                           <li class="pick"><a href="https://makarchiknet.github.io/ToDo-List/" target="_blank">ToDo
+                                 List</a>
+                           </li>
+                           <li class="pick"><a href="https://makarchiknet.github.io/Trello-clone/"
+                                 target="_blank">Trello-clone</a></li>
+                           <li class="pick"><a href="https://makarchiknet.github.io/" target="_blank">Landing page</a>
+                           </li>
+                           <li>
+                              Code:
+                           </li>
+                        </ul>
+                     </nav>
+                     <pre><code class="html">
+   function convertHashToArray(hash)
+    {const myHash = Object.entries(hash)
+      return myHash.sort()
+   }
+                     </code></pre>
+
+
+                     <div class="divider blue"></div>
+
+                     <h3 class="right">Experience</h3>
+                     <ul class="ul-items">
+                        <li>Experience in Javascript / HTML / CSS development.
+                        </li>
+                        <li>I also have experience in graphics packages such as Photoshop, CorelDraw, Illustrator
+                           and
+                           Figma.
+                        </li>
+                        <li>Basics of working with version control systems</li>
+                     </ul>
+                  </div>
+               </section>
+
+            </div>
+
          </main>
          <footer class="footer">
             <div class="footer-nav">
@@ -152,6 +169,7 @@ function convertHashToArray(hash)
          </footer>
       </div>
    </div>
+   <script src="js/script.js"></script>
 </body>
 
 </html>
